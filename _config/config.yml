@@ -1,0 +1,6 @@
+---
+Name: max-upload-size-increaser
+---
+
+SilverStripe\AssetAdmin\Controller\AssetAdmin:
+  max_upload_size: 61420000
