@@ -14,16 +14,16 @@ class MaxUploadSizeTester extends BuildTask
 
     public function run($request)
     {
-        echo '<h1>INI File</h1>';
+        echo '<h1>php.ini file in use:</h1>';
         echo php_ini_loaded_file();
 
-        echo '<h1>upload_max_filesize (set in INI file)</h1>';
+        echo '<h1>php.ini - upload_max_filesize:</h1>';
         echo $this->phpFileSizeFormatted(ini_get('upload_max_filesize'));
 
-        echo '<h1>post_max_size (set in INI file)</h1>';
+        echo '<h1>php.ini - post_max_size</h1>';
         echo $this->phpFileSizeFormatted(ini_get('post_max_size'));
 
-        echo '<h1>Assets Settings ('.AssetAdmin::class.'::max_upload_size)</h1>';
+        echo '<h1>Assets Settings ('.AssetAdmin::class.'::max_upload_size):</h1>';
         echo $this->phpFileSizeFormatted(Config::inst()->get(AssetAdmin::class, 'max_upload_size'));
 
         echo '<h1>Also see .htaccess file in this module</h1>';
