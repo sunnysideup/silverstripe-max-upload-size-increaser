@@ -11,6 +11,8 @@ class MaxUploadSizeTester extends BuildTask
     protected $title = 'Check Max File Upload Size';
 
     protected $description = 'Test all the settings required for large uploads.';
+    
+    private static $segment = 'max-upload-size-tester';
 
     public function run($request)
     {
