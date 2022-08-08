@@ -9,7 +9,8 @@
     "upload",
     "upload field",
     "files",
-    "maximum size"
+    "maximum size",
+    "assets"
   ],
   "require": {
     "silverstripe/framework": "^4.0"
